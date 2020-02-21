@@ -1,13 +1,14 @@
 body
 {
     margin:0;
-    font-family: sans-serif;
+    font-family:sans-serif
 }
 
-header
+#principal
 {
     width: 100%;
     background: #4e94ab;
+    position: fixed;
 }
 
 #btn_menu
@@ -15,7 +16,7 @@ header
     display:none;
 }
 
-header label
+#principal label
 {
     display: none;
     width: 30px;
@@ -24,10 +25,17 @@ header label
     border-right: 1px solid #fff;
 }
 
-header label:hover
+#principal label:hover
 {
     cursor: pointer;
     background:rgba(0,0,0,0.3);
+}
+
+
+.menu
+{
+   width: 100%;
+   background: blue;
 }
 
 .menu ul
@@ -41,31 +49,25 @@ header label:hover
 
 .menu li
 {
-    border-right: 1px solid #fff;
+    border-right: 1px solid white;
 }
 
 .menu li:hover
 {
-    background:rgba(0,0,0,0.3);
+    background: black;
 }
 
-.menu li a
+.menu li a 
 {
     display: block;
     padding: 15px 20px;
-    color: #fff;
-    text-decoration:none;
+    color: white;
+    text-decoration: none;
 }
-
-main
-{
-    margin:20px;
-}
-
 
 @media (max-width:768px)
 {
-    header label
+    #principal label
     {
         display: block;
     }
@@ -93,4 +95,18 @@ main
     {
         margin: 0;
     }
+}
+
+footer
+{
+    text-align: center;
+    color:white;
+    background-color: blue;
+    background-size: cover;
+}
+body
+{
+    width:100%;
+    size: cover;
+    color:white;
 }
